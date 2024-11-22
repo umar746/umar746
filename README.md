@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camera Join</title>
-</head>
-<body>
 
-    <h2>Join Camera Session</h2>
-    <a href="camera-session.html?sessionID=12345" target="_blank">Click to Join the Camera Session</a>
-
-    <script>
-        // Code to access camera and join session (you can extend it)
-        function joinCameraSession(https://yourdomain.com/camera-session
-) {
-            navigator.mediaDevices.getUserMedia({ video: true })
-                .then(function (stream) {
-                    let videoElement = document.createElement('video');
-                    videoElement.srcObject = stream;
-                    document.body.appendChild(videoElement);
-                    videoElement.play();
-                })
-                .catch(function (error) {
-                    alert('Error accessing camera: ' + error);
                 });
         }
     </script>
